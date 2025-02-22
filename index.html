@@ -1,112 +1,93 @@
-<!--Validator has been run through W3C. This file works but has some errors-->
+<!--Validator has been run through W3C. It works but contains some errors.-->
 
-<!-- Boiler Plate -->
+<!-- This is the main HTML document for Momma K's Recipe Website -->
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Week 2 Coding Assignment</title>
-        <!-- Link to external CSS file -->
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <!-- Header Section -->
-        <header>
-            <h1>Week 2 Coding Assignment - Kera Lloyd</h1>
-        </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mama K's Recipes</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <!-- This navigation bar provides links to different pages of the website. It is responsive and collapses into a menu on smaller screens. -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Moms Recipes</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="submit.html">Submit a Recipe</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-        <!-- Main Content -->
-        <main>
-            <!-- Navigation Menu -->
-            <nav>
-                <div>
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About</a>
-                    <a href="contact.html">Contact</a>
-                </div>
-            </nav>
-            <hr> <!-- Horizontal line to separate navigation -->
+    <!-- Main Content -->
+    <!-- This section contains the main content of the page, including a welcome message and a list of featured recipes. -->
+    <div class="container mt-4">
+      <h1 class="text-center">Welcome to Mama K's Recipe Collection</h1>
+      <div class="row">
+        <div class="col-md-6">
+          <h3>Featured Recipes</h3>
+          <!-- This table displays a list of featured recipes with ingredients and category. -->
+          <table class="table table-success table-striped table-bordered">
+            <thead>
+                <tr>
+                    <th scope="col" class="bg-secondary">Recipe Name</th>
+                    <th scope="col" class="bg-secondary">Main Ingredients</th>
+                    <th scope="col" class="bg-secondary">Category</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Shepherd's Pie</td>
+                    <td>Potatoes, Beef, Tomato Sauce</td>
+                    <td>Main Course</td>
+                </tr>
+                <tr>
+                    <td>Chocolate Lava Cake</td>
+                    <td>Flour, Cocoa, Sugar</td>
+                    <td>Dessert</td>
+                </tr>
+                <tr>
+                    <td>Chili</td>
+                    <td>Beef, Beans, Onion</td>
+                    <td>Side Dish</td>
+                </tr>
+                <tr>
+                    <td>Texas Roadhouse House Salad</td>
+                    <td>Lettuce, Crutons, Egg, Cheese, Dressing</td>
+                    <td>Appetizer</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
-            <!-- Section 1: Welcome and Images -->
-            <section>
-                <h2>Welcome to my page that's all about kitties!</h2>
-                <p>Do you like cats? Here are some pictures of some pretty kitties...</p>
-                <img height="200" src="images/orangeKittie.jpg" alt="An orange cat loafing on the floor with its eyes closed.">
-                <img height="200" src="images/scottishFold.jpg" alt="A grey Scottish Fold cat.">
-                <img height="200" src="images/sphynx.jpg" alt="A white sphynx cat looking into the sun.">
-            </section>
+    <!-- Footer -->
+    <!-- This footer provides basic information and copyright details. -->
+    <footer class="bg-dark text-white text-center py-3 mt-4">
+      <p>&copy; 2025 Mama K's Recipe Collection</p>
+    </footer>
 
-            <!-- Section 2: List of Cat Breeds -->
-            <section>
-                <h2>Breeds</h2>
-                <p>Here is a list of some different cat breeds. Which one do you like best?</p>
-                <ol>
-                    <li>American Shorthair</li>
-                    <li>Scottish Fold</li>
-                    <li>Sphynx</li>
-                </ol>
-            </section>
-
-            <!-- Section 3: Table of Cat Info -->
-            <section>
-                <h2>Kitties For Sale</h2>
-                <p>Here is a list of some of our available kitties:</p>
-                <!-- Table containing cat breed, age, and price -->
-                <table>
-                    <tr>
-                        <th>Breed</th>
-                        <th>Age</th>
-                        <th>Price</th>
-                    </tr>
-                    <tr>
-                        <td>Sphynx</td>
-                        <td>2 Years</td>
-                        <td>$1500.00</td>
-                    </tr>
-                    <tr>
-                        <td>American Shorthair</td>
-                        <td>1 Year</td>
-                        <td>$50.00</td>
-                    </tr>
-                    <tr>
-                        <td>Scottish Fold</td>
-                        <td>3 Years</td>
-                        <td>$1200.00</td>
-                    </tr>
-                </table>
-            </section>
-
-            <!-- Section 4: Form to Select a Kitty -->
-            <section>
-                <h2>Fill out this form to select which kitty you would like to purchase:</h2>
-                <!-- Form to collect user details and kitty selection -->
-                <form>
-                    <input type="text" id="firstName" name="firstName" placeholder="First Name"> <br>
-                    <input type="text" id="lastName" name="lastName" placeholder="Last Name"> <br><br>
-                    <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Phone Number"><br><br>
-
-                    <h3>Choose your Kitty:</h3>
-                    <div class="radio-group">
-                        <label>
-                            <input type="radio" name="kitty" value="Sphynx"> Sphynx
-                        </label>
-                        <label>
-                            <input type="radio" name="kitty" value="Persian"> Persian
-                        </label>
-                        <label>
-                            <input type="radio" name="kitty" value="Scottish-Fold"> Scottish Fold
-                        </label>
-                    </div>
-
-                    <!-- Submit button -->
-                    <input type="submit" value="Submit">
-                </form>
-            </section>
-            <!--Footer-->
-            <footer>
-                <p>&copy; 2025 Thanks for visiting my website! <span class="heart">❤️</span></p>
-            </footer>
-        </main>
-    </body>
+    <!-- Bootstrap Script -->
+    <!-- This script enables Bootstrap’s interactive components such as dropdowns and modals. -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>

@@ -9,11 +9,12 @@
     <title>Submit a Recipe</title>
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      href="node_modules/bootstrap/dist/css/bootstrap.css"
     />
   </head>
   <body>
     <!-- Navbar -->
+    <!-- This navigation bar provides links to different pages of the website. It is responsive and collapses into a menu on smaller screens. -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
         <a class="navbar-brand" href="index.html">Moms Recipes</a>
@@ -39,6 +40,7 @@
     </nav>
 
     <!-- Submit Recipe Form -->
+    <!-- This form allows the user to submit a recipe by providing the name, ingredients and course category. -->
     <div class="container mt-4">
       <h1 class="text-center mb-4">Submit Your Recipe</h1>
       <form>
@@ -59,15 +61,18 @@
                 <option value="Appetizer">Appetizer</option>
             </select>
         </div>
-        <button type="submit" class="btn btn-dark">Submit Recipe</button>
+        <button type="submit" class="btn btn-secondary">Submit Recipe</button>
     </form>
     </div>
 
     <!-- Footer -->
+    <!-- This footer provides basic information and copyright details. -->
     <footer class="bg-dark text-white text-center py-3 mt-4">
       <p>&copy; 2025 Mama K's Recipe Collection</p>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
   </body>
 </html>
